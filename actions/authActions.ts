@@ -1,7 +1,7 @@
 "use server";
-import { uploadImage } from "@/lib/uploadImage"; // Tu función existente
+import { uploadImage } from "../lib/uploadImage"; // Tu función existente
 
-import { Icampana, Irefugios } from "@/types";
+import { Icampana, Irefugios } from "../types";
 //############        MASCOTAS ##############
 
 // conecto con el endpoint de la api para ver las todas las mascotas

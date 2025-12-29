@@ -1,6 +1,7 @@
 "use client";
 import { useState } from "react";
-import { newMascotas } from "@/actions/authActions";
+
+import { newMascotas } from "../../actions/authActions";
 import { FiX, FiCamera } from "react-icons/fi";
 
 interface ModalNuevaMascotaProps {

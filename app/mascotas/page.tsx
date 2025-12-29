@@ -1,10 +1,11 @@
 "use client";
-import { perdidas, encontradas } from "@/actions/authActions";
-import ToggleMascotas from "@/components/ComMascotas/toggle";
-import ListaMascotas from "@/components/ComMascotas";
-import { Imascotas } from "@/types";
+
+import { perdidas, encontradas } from "../../actions/authActions";
+import ToggleMascotas from "../../components/ComMascotas/toggle";
+import ListaMascotas from "../../components/ComMascotas";
+import { Imascotas } from "../../types";
 import { useEffect, useState } from "react";
-import ModalNuevaMascota from "@/components/ComMascotas/formularioModal";
+import ModalNuevaMascota from "../../components/ComMascotas/formularioModal";
 import { Heart } from "lucide-react";
 
 export default function Mascotas() {

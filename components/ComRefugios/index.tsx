@@ -1,6 +1,6 @@
 "use client";
 import { useState } from "react";
-import { Irefugios } from "@/types";
+import { Irefugios } from "../../types";
 import { MapPin, Phone, Mail, User } from "lucide-react"; // 👈 íconos extra
 
 export default function ListaRefugios({
@@ -18,7 +18,7 @@ export default function ListaRefugios({
           className="bg-white rounded-2xl border border-orange-100 shadow-sm hover:shadow-lg hover:border-orange-200 transform hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between"
         >
           {/* Header */}
-          <div className="px-6 py-4 bg-gradient-to-r from-orange-100 to-orange-50 border-b border-orange-100">
+          <div className="px-6 py-4 bg-linear-to-r from-orange-100 to-orange-50 border-b border-orange-100">
             <h2 className="text-lg font-semibold text-orange-600">
               Capacidad: {refugio.capacidad} mascotas
             </h2>

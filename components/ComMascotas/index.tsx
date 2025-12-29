@@ -1,5 +1,5 @@
 "use client";
-import { Imascotas } from "@/types";
+import { Imascotas } from "../../types";
 import { useState } from "react";
 
 export default function ListaMascotas({
@@ -30,7 +30,7 @@ export default function ListaMascotas({
                 Sin imagen
               </div>
             )}
-            <div className="absolute bottom-0 left-0 w-full bg-gradient-to-t from-black/60 to-transparent p-4">
+            <div className="absolute bottom-0 left-0 w-full bg-linear-to-t from-black/60 to-transparent p-4">
               <h2 className="text-white text-xl font-bold">{mascota.nombre}</h2>
               <p className="text-sm text-gray-200">{mascota.estado}</p>
             </div>

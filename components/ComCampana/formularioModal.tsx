@@ -1,9 +1,9 @@
 "use client";
 
 import { useState } from "react";
-import { newCampana } from "@/actions/authActions"; // Acción que envía los datos al backend
+import { newCampana } from "../../actions/authActions";
 import { FiX, FiMapPin, FiCalendar } from "react-icons/fi"; // Iconos de UI
-import { IcampanaForm } from "@/types"; // Tipado de props para el modal
+import { IcampanaForm } from "../../types"; // Tipado de props para el modal
 
 export default function ModalNuevaCampana({
   onClose,

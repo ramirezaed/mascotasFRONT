@@ -1,9 +1,9 @@
 "use client";
 
 import { useState } from "react";
-import { newRefugio } from "@/actions/authActions";
+import { newRefugio } from "../../actions/authActions";
 import { FiX, FiMapPin } from "react-icons/fi";
-import { IrefugiosForm } from "@/types";
+import { IrefugiosForm } from "../../types";
 
 export default function ModalNuevoRefugio({
   onClose,

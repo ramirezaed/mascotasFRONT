@@ -1,5 +1,5 @@
-import Encabezado from "@/components/ComInicio";
-import Servicios from "@/components/ComInicio/servicios";
+import Encabezado from "../components/ComInicio";
+import Servicios from "../components/ComInicio/servicios";
 
 export default async function Home() {
   return (
