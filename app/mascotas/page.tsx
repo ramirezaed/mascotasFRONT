@@ -1,4 +1,7 @@
-import MascotasClient from "../../components/ComMascotas/mascotasClient";
+// import MascotasClient from "../../components/ComMascotas/mascotasClient";
+// export default function Page() {
+//   return <MascotasClient />;
+// }
 export default function Page() {
-  return <MascotasClient />;
+  return <h1>Página OK</h1>;
 }
