@@ -5,18 +5,6 @@ import { newCampana } from "@/actions/authActions"; // Acción que envía los da
 import { FiX, FiMapPin, FiCalendar } from "react-icons/fi"; // Iconos de UI
 import { IcampanaForm } from "@/types"; // Tipado de props para el modal
 
-/**
- * Componente ModalNuevaCampana
- *
- * Este componente representa un modal para crear una nueva campaña.
- * Contiene campos: título, descripción, fecha y ubicación.
- * Realiza validaciones de campos obligatorios y fecha futura.
- * Refresca la lista de campañas en la página padre al crear una nueva campaña.
- *
- * Props:
- * - onClose: función para cerrar el modal
- * - onSuccess: función que se ejecuta después de crear la campaña (ej: recargar lista)
- */
 export default function ModalNuevaCampana({
   onClose,
   onSuccess,
