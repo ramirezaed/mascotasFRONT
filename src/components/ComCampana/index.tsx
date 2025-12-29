@@ -3,7 +3,7 @@ import { useState } from "react";
 import { Icampana } from "@/types";
 import { CalendarDays, MapPin } from "lucide-react";
 
-export default function ListaCampañas({
+export default function ListaCampanas({
   params = [],
 }: {
   params?: Icampana[];

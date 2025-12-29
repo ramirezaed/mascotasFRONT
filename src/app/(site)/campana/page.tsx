@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from "react";
 import { fetchCampaña } from "@/actions/authActions";
-import ListaCampañas from "@/components/ComCampana";
+import ListaCampanas from "@/components/ComCampana";
 import ModalNuevaCampana from "@/components/ComCampana/formularioModal";
 import { Stethoscope } from "lucide-react";
 
@@ -80,7 +80,7 @@ export default function Campana() {
             </div>
           </div>
         ) : (
-          <ListaCampañas params={campañas} />
+          <ListaCampanas params={campañas} />
         )}
       </div>
     </div>
