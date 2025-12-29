@@ -8,7 +8,7 @@ import { useEffect, useState } from "react";
 import ModalNuevaMascota from "../../components/ComMascotas/formularioModal";
 import { Heart } from "lucide-react";
 
-export default function Mascotas() {
+export default function Page() {
   const [estado, setEstado] = useState<"PERDIDA" | "ENCONTRADA">("PERDIDA");
   const [mascotas, setMascotas] = useState<Imascotas[]>([]);
   const [loading, setLoading] = useState(true);
