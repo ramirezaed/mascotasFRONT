@@ -48,7 +48,7 @@ export default function MascotasClient() {
           className="px-10 py-2 bg-orange-400 text-white rounded-lg"
           onClick={() => setModalOpen(true)}
         >
-          + Reportar Mascota
+          Reportar Mascota
         </button>
       </div>
 
