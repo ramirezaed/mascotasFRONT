@@ -45,7 +45,7 @@ export default function Servicios() {
 
       color: "text-primary",
       bgColor: "bg-primary/10",
-      link: "/campanas",
+      link: "/campana",
     },
   ];
 
