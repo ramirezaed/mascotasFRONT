@@ -133,19 +133,19 @@ export async function fetchRefugios() {
   }
 }
 
-export async function fetchRefugiosById(id: number) {
-  try {
-    const response = await fetch(
-      `${process.env.API_HOST}/api/refugios/fetchById`
-    );
-    if (!response.ok) {
-      throw new Error("error ");
-    }
-    return response.json;
-  } catch (error) {
-    console.error("error", error);
-  }
-}
+// export async function fetchRefugiosById(id: number) {
+//   try {
+//     const response = await fetch(
+//       `${process.env.API_HOST}/api/refugios/fetchById`
+//     );
+//     if (!response.ok) {
+//       throw new Error("error ");
+//     }
+//     return response.json;
+//   } catch (error) {
+//     console.error("error", error);
+//   }
+// }
 
 export async function newRefugio(data: Irefugios) {
   try {

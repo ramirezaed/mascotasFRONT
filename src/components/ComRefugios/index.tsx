@@ -26,9 +26,10 @@ export default function ListaRefugios({
 
           {/* Contenido */}
           <div className="p-6 flex-1 flex flex-col justify-between">
-            <p className="text-gray-600 text-sm mb-4 line-clamp-3">
+            {/* <p className="text-gray-600 text-sm mb-4 line-clamp-3">
               {refugio.descripcion}
-            </p>
+            </p> */}
+            <p className="text-gray-600 text-sm mb-4">{refugio.descripcion}</p>
 
             {/* Etiquetas */}
             <div className="space-y-2">

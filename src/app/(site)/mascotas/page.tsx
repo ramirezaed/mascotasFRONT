@@ -42,13 +42,10 @@ export default function Mascotas() {
           </h1>
         </div>
         {/* <p className="text-xl text-muted-foreground"> */}
-        <p className="text-lg sm:text-xl text-gray-600">
-          Ayuda a reunir mascotas con sus familias
-        </p>
       </div>
       <div className="mt-4 flex justify-center">
         <button
-          className="px-10 py-2 bg-orange-300 text-white rounded-lg hover:bg-orange-400 cursor-pointer  "
+          className="px-10 py-2 bg-orange-400 text-white rounded-lg hover:bg-orange-600 cursor-pointer  "
           onClick={() => setModalOpen(true)}
         >
           + Reportar Mascota
@@ -68,7 +65,7 @@ export default function Mascotas() {
 
         {loading ? (
           <div className="flex flex-col items-center justify-center mt-16">
-            <div className="text-2xl font-semibold text-gray-700">
+            <div className="text-2xl font-semibold text-orange-400">
               Cargando...
             </div>
           </div>

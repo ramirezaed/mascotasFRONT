@@ -39,8 +39,8 @@ export default function Campana() {
           </h1>
         </div>
         <p className="text-lg sm:text-xl text-gray-600">
-          Explora campañas de salud, vacunación y bienestar para tus mascotas.
-          Participa y mantén a tus amigos peludos felices y saludables.
+          {/* Explora campañas de salud, vacunación y bienestar para tus mascotas.
+          Participa y mantén a tus amigos peludos felices y saludables. */}
         </p>
       </div>
 

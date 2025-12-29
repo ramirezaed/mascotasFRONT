@@ -1,4 +1,4 @@
-import { Heart, PlusCircle } from "lucide-react";
+import { Heart } from "lucide-react";
 import heroImage from "@/assets/hero-pets.jpg";
 import Link from "next/link";
 

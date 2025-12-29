@@ -40,8 +40,8 @@ export default function Alojamientos() {
           </h1>
         </div>
         <p className="text-lg sm:text-xl text-gray-600">
-          Un espacio para conectar mascotas con hogares temporales. Descubrí
-          opciones disponibles o compartí la tuya para ayudar.
+          {/* Un espacio para conectar mascotas con hogares temporales. Descubrí
+          opciones disponibles o compartí la tuya para ayudar. */}
         </p>
       </div>
 
@@ -67,7 +67,7 @@ export default function Alojamientos() {
       <div className="mt-10 min-h-[90vh]">
         {loading ? (
           <div className="flex flex-col items-center justify-center mt-16">
-            <div className="text-2xl font-semibold text-gray-700">
+            <div className="text-2xl font-semibold text-orange-400">
               Cargando Alojamientos...
             </div>
           </div>

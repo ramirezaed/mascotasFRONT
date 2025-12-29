@@ -3,7 +3,7 @@ export interface Imascotas {
   nombre?: string;
   raza?: string;
   tamaño?: string;
-  tipo: string;
+  tipo?: string;
   descripcion?: string;
   estado: string;
   contactoNombre?: string;
@@ -32,7 +32,7 @@ export interface IcampanaForm {
 export interface Irefugios {
   id?: number;
   descripcion: string;
-  ubicacion: String;
+  ubicacion: string;
   capacidad?: number; // cuántas mascotas puede alojar
   // contacto si no hay usuario
   contactoNombre: string;

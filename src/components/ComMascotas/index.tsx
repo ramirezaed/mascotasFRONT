@@ -23,7 +23,7 @@ export default function ListaMascotas({
               <img
                 src={mascota.imagen}
                 alt={mascota.nombre || "Mascota"}
-                className="h-full w-full object-cover"
+                className="h-full w-full object-contain bg-gray-100"
               />
             ) : (
               <div className="h-full w-full flex items-center justify-center text-gray-400">
