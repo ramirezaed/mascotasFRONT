@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
+import Menu from "@/components/navbar";
+import Footer from "@/components/footer";
 import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -9,15 +11,22 @@ export const metadata: Metadata = {
   description: "red mascotas",
 };
 
-export default async function RootLayout({
+export default function RootLayout({
   children,
-}: Readonly<{ children: React.ReactNode }>) {
+}: {
+  children: React.ReactNode;
+}) {
   return (
-    <html lang="en">
-      <body
-        className={`${inter.className} flex min-h-screen w-full flex-col justify-between items-center`}
-      >
-        <main className="w-full">{children}</main>
+    <html lang="es">
+      <body className={`${inter.className} min-h-screen flex flex-col`}>
+        {/* Navbar */}
+        <Menu />
+
+        {/* Contenido */}
+        <main className="flex-1 w-full">{children}</main>
+
+        {/* Footer */}
+        <Footer />
       </body>
     </html>
   );
