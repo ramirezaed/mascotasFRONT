@@ -1,5 +1,6 @@
 "use client";
 
+import { perdidas, encontradas } from "../../actions/authActions";
 import ToggleMascotas from "../../components/ComMascotas/toggle";
 import ListaMascotas from "../../components/ComMascotas/index";
 import { Imascotas } from "../../types";
@@ -13,19 +14,11 @@ export default function MascotasClient() {
   const [loading, setLoading] = useState(true);
   const [modalOpen, setModalOpen] = useState(false);
 
-  // Fetch directo desde API routes
   const fetchMascotas = async () => {
     setLoading(true);
     try {
-      const endpoint =
-        estado === "PERDIDA"
-          ? "/api/mascotas/perdidas"
-          : "/api/mascotas/encontradas";
-
-      const response = await fetch(endpoint);
-      if (!response.ok) throw new Error("Error al cargar mascotas");
-
-      const data = await response.json();
+      const data =
+        estado === "PERDIDA" ? await perdidas() : await encontradas();
       setMascotas(data ?? []);
     } catch (e) {
       console.error(e);

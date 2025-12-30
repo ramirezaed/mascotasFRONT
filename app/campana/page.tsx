@@ -50,7 +50,7 @@ export default function Campana() {
           className="px-10 py-2 bg-orange-300 text-white rounded-lg hover:bg-orange-400 cursor-pointer"
           onClick={() => setModalOpen(true)}
         >
-          + Nueva Campaña
+          Nueva Campaña
         </button>
       </div>
 

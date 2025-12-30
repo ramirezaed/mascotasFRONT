@@ -1,9 +1,6 @@
 "use server";
 import { uploadImage } from "../lib/uploadImage"; // Tu función existente
-
 import { Icampana, Irefugios } from "../types";
-//############        MASCOTAS ##############
-
 // conecto con el endpoint de la api para ver las todas las mascotas
 export async function fetchMascotas() {
   try {
@@ -132,20 +129,6 @@ export async function fetchRefugios() {
     return [];
   }
 }
-
-// export async function fetchRefugiosById(id: number) {
-//   try {
-//     const response = await fetch(
-//       `${process.env.API_HOST}/api/refugios/fetchById`
-//     );
-//     if (!response.ok) {
-//       throw new Error("error ");
-//     }
-//     return response.json;
-//   } catch (error) {
-//     console.error("error", error);
-//   }
-// }
 
 export async function newRefugio(data: Irefugios) {
   try {
