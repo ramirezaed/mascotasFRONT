@@ -1,3 +1,4 @@
+"use server";
 import { uploadImage } from "../lib/uploadImage"; // Tu función existente
 
 import { Icampana, Irefugios } from "../types";
