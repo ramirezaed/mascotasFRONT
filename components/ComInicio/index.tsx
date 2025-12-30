@@ -32,7 +32,7 @@ export default function Encabezado() {
             </Link>
             <Link
               href="/refugios"
-              className="bg-gray-500 text-white px-4 py-2 rounded-xl hover:bg-gray-600 transition w-40"
+              className="bg-gray-500 text-white px-4 py-2 rounded-xl hover:bg-gray-700 transition w-40"
             >
               Ver Refugios
             </Link>
