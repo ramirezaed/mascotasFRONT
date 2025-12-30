@@ -2,7 +2,7 @@
 
 import { perdidas, encontradas } from "../../actions/authActions";
 import ToggleMascotas from "../../components/ComMascotas/toggle";
-import ListaMascotas from "../../components/ComMascotas";
+import ListaMascotas from "../../components/ComMascotas/index";
 import { Imascotas } from "../../types";
 import { useEffect, useState } from "react";
 import ModalNuevaMascota from "../../components/ComMascotas/formularioModal";
