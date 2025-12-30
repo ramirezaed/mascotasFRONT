@@ -72,16 +72,16 @@ export default function Campana() {
       <div className="mt-10 min-h-[90vh]">
         {loading ? (
           <div className="flex flex-col items-center justify-center mt-16">
-            <div className="text-2xl font-semibold text-gray-700">
+            <div className="text-2xl font-semibold text-orange-400">
               Cargando campañas...
             </div>
           </div>
         ) : campañas.length === 0 ? (
           <div className="flex flex-col items-center justify-center mt-16">
-            <div className="text-2xl font-semibold text-gray-700 mb-4 mt-11">
+            <div className="text-2xl font-semibold text-orange-400 mb-4 mt-11">
               No se encontró ninguna Campaña
             </div>
-            <div className="text-sm text-gray-500 py-8 mt-14">
+            <div className="text-sm text-orange-200 py-8 mt-14">
               Una vez que alguien proponga una campaña, aparecerá aquí.
             </div>
           </div>
