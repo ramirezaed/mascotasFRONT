@@ -23,10 +23,19 @@ export default function Encabezado() {
           <p className="text-xl md:text-2xl mb-8 text-gray-800">
             Conectamos mascotas perdidas con sus familias...
           </p>
-
           <div className="flex gap-4 justify-center">
-            <Link href="/campana">Ver Campañas</Link>
-            <Link href="/refugios">Ver Refugios</Link>
+            <Link
+              href="/campana"
+              className="bg-orange-300 text-white px-4 py-2 rounded-xl  hover:bg-orange-500 transition w-40"
+            >
+              Ver Campañas
+            </Link>
+            <Link
+              href="/refugios"
+              className="bg-gray-500 text-white px-4 py-2 rounded-xl hover:bg-gray-600 transition w-40"
+            >
+              Ver Refugios
+            </Link>
           </div>
         </div>
       </div>
