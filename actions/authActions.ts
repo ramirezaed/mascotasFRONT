@@ -1,4 +1,3 @@
-"use server";
 import { uploadImage } from "../lib/uploadImage"; // Tu función existente
 import { Icampana, Irefugios } from "../types";
 // conecto con el endpoint de la api para ver las todas las mascotas
