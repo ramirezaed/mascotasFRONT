@@ -1,51 +1,7 @@
+"use server";
 import { uploadImage } from "../lib/uploadImage"; // Tu función existente
 import { Icampana, Irefugios } from "../types";
 // conecto con el endpoint de la api para ver las todas las mascotas
-export async function fetchMascotas() {
-  try {
-    const response = await fetch(
-      `${process.env.API_HOST}/api/mascotas/fetchMascotas`
-    );
-    if (!response.ok) throw new Error("error al cargar mascotas");
-    const data = await response.json();
-    return data;
-  } catch (error) {
-    console.error("error de coneccion con la api0", error);
-    return [];
-  }
-}
-// conecto con el endpoint de la api para ver las mascotas con el estado perdidas
-export async function perdidas() {
-  try {
-    const response = await fetch(
-      `${process.env.API_HOST}/api/mascotas/perdidas`
-    );
-    if (!response.ok) {
-      throw new Error("no hay mascotas perdidas");
-    }
-    const data = await response.json();
-    return data;
-  } catch (error) {
-    console.error("error", error);
-    return [];
-  }
-}
-// conecto con el endpoint de la api para ver las mascotas con el estado encontradas
-export async function encontradas() {
-  try {
-    const response = await fetch(
-      `${process.env.API_HOST}/api/mascotas/encontradas`
-    );
-    if (!response.ok) {
-      throw new Error("error");
-    }
-    const data = await response.json();
-    return data;
-  } catch (error) {
-    console.error("error", error);
-    return [];
-  }
-}
 
 export async function newMascotas(data: FormData) {
   try {
@@ -98,36 +54,8 @@ export async function newCampana(data: Icampana) {
     throw error;
   }
 }
-export async function fetchCampaña() {
-  try {
-    const response = await fetch(
-      `${process.env.API_HOST}/api/campana/fetchCampana`
-    );
-    if (!response.ok) {
-      throw new Error("error al cargar datos");
-    }
-
-    return response.json();
-  } catch (error) {
-    console.error("error", error);
-  }
-}
 
 /////// REFUGIOS ALOJAMIENTOS
-export async function fetchRefugios() {
-  try {
-    const response = await fetch(
-      `${process.env.API_HOST}/api/refugios/fetchRefugios`
-    );
-    if (!response.ok) {
-      throw new Error("error al cargar campañas");
-    }
-    return response.json();
-  } catch (error) {
-    console.error("error", error);
-    return [];
-  }
-}
 
 export async function newRefugio(data: Irefugios) {
   try {

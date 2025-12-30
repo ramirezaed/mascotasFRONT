@@ -1,7 +1,6 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { fetchCampaña } from "../../actions/authActions";
 import ListaCampanas from "../../components/ComCampana";
 import ModalNuevaCampana from "../../components/ComCampana/formularioModal";
 import { Stethoscope } from "lucide-react";
@@ -14,7 +13,15 @@ export default function Campana() {
   const cargarCampañas = async () => {
     setLoading(true);
     try {
-      const data = await fetchCampaña();
+      const response = await fetch(
+        `${process.env.NEXT_PUBLIC_API_HOST}/api/campana/fetchCampana`
+      );
+
+      if (!response.ok) {
+        throw new Error("Error al cargar datos");
+      }
+
+      const data = await response.json();
       setCampañas(data ?? []);
     } catch (error) {
       console.error("Error al cargar campañas:", error);
@@ -39,8 +46,7 @@ export default function Campana() {
           </h1>
         </div>
         <p className="text-lg sm:text-xl text-gray-600">
-          {/* Explora campañas de salud, vacunación y bienestar para tus mascotas.
-          Participa y mantén a tus amigos peludos felices y saludables. */}
+          Explora campañas de salud, vacunación y bienestar para tus mascotas.
         </p>
       </div>
 

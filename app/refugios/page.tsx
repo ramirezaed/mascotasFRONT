@@ -1,7 +1,6 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { fetchRefugios } from "../../actions/authActions";
 import ListaRefugios from "../../components/ComRefugios";
 import ModalNuevoRefugio from "../../components/ComRefugios/formularioModal";
 import { Home } from "lucide-react";
@@ -15,7 +14,15 @@ export default function Alojamientos() {
   const cargarRefugios = async () => {
     setLoading(true);
     try {
-      const data = await fetchRefugios();
+      const response = await fetch(
+        `${process.env.NEXT_PUBLIC_API_HOST}/api/refugios/fetchRefugios`
+      );
+
+      if (!response.ok) {
+        throw new Error("Error al cargar alojamientos");
+      }
+
+      const data = await response.json();
       setRefugios(data ?? []);
     } catch (error) {
       console.error("Error al cargar refugios:", error);
@@ -40,8 +47,8 @@ export default function Alojamientos() {
           </h1>
         </div>
         <p className="text-lg sm:text-xl text-gray-600">
-          {/* Un espacio para conectar mascotas con hogares temporales. Descubrí
-          opciones disponibles o compartí la tuya para ayudar. */}
+          Un espacio para conectar mascotas con hogares temporales. Descubrí
+          opciones disponibles o compartí la tuya para ayudar.
         </p>
       </div>
 
